@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    overflow: hidden; /* Impede a rolagem */
+    height: 100vh;    /* Ocupa 100% da altura da janela */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #444;
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 2px solid #444;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 2.0rem;
+    color: #444;
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 2px solid #444;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: #555;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para todos os links com a classe nav-link */
+/* Contêiner principal */
+.nav-container {
+    display: flex; /* Flexbox para organizar os itens em linha */
+    flex-direction: row; /* Itens na horizontal */
+    width: 100vw; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #cccccc, #666666); /* Degradê contínuo entre as boxes */
+}
+
+/* Estilo dos links */
+a.nav-link {
+    display: flex; /* Flexbox para centralizar o texto */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex: 1; /* Faz com que cada link ocupe espaço igual na largura */
+    height: 100%; /* Ocupa toda a altura do contêiner pai */
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff; /* Texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordas suaves */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    box-sizing: border-box;
+}
+
+/* Hover: Efeito ao passar o mouse sobre um link */
+a.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Leve escurecimento do fundo */
+    color: #fff; /* Texto branco */
+    transform: scale(1.10); /* Leve aumento para exaltar a box */
+}
+
+/* Estilo para o link da página inicial */
+a.home-link {
+    display: inline-block;
+    font-size: 1.3rem; /* Um pouco maior que os outros links */
+    font-weight: bold;
+    color: #fff; /* Texto branco */
+    background-color: #0081c7; /* azul vibrante */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 12px 25px; /* Mais espaçamento para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+/* Hover: Efeito ao passar o mouse */
+a.home-link:hover {
+    background-color: #015f92; /* azul mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Active: Quando o link é clicado */
+a.home-link:active {
+    background-color: #004063; /* azul ainda mais escuro */
+    transform: scale(0.95); /* Leve redução */
+}
+
+/* Focus: Contorno para acessibilidade */
+a.home-link:focus {
+    outline: 2px solid #80bdff; /* Contorno azul claro */
+    outline-offset: 3px;
+}
+
+/* Organização para o container do link inicial */
+.container {
+    text-align: center; /* Centraliza o link horizontalmente */
+    margin: 20px auto;
+}
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portifolio.css">
+</head>
+<body>
+    <h1>Simulador de Consumo de Água</h1>
+    <p>Descubra o quanto de água você consome no dia a dia e como pode economizar!</p>
+    <form id="water-form">
+        <label for="showers">Quantos banhos você toma por dia?</label>
+        <input type="number" id="showers" min="0" placeholder="Ex: 2" required>
+
+        <label for="toothbrush">Quantas vezes você escova os dentes?</label>
+        <input type="number" id="toothbrush" min="0" placeholder="Ex: 3" required>
+
+        <label for="dishes">Quantas vezes lava a louça?</label>
+        <input type="number" id="dishes" min="0" placeholder="Ex: 2" required>
+
+        <label for="laundry">Quantas lavagens de roupa faz por semana?</label>
+        <input type="number" id="laundry" min="0" placeholder="Ex: 1" required>
+
+        <button type="button" onclick="calculateWaterUsage()">Calcular Consumo</button>
+    </form>
+    <div id="result"></div>
+    <script src="portifolio.js"></script> <!-- Caminho para a pasta js -->
+    
+    <div class="container">
+        <a href="index.html" class="home-link">Página Inicial</a>
+    </div>
+   
+
+</body>
+</html>

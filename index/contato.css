@@ -1,0 +1,74 @@
+/* Caixa estilizada para contatos */
+.contact-container {
+    background-color: #f0f8ff; /* Azul claro para destaque */
+    border: 1px solid #d1e7fd; /* Bordas suaves */
+    border-radius: 12px;
+    padding: 25px 20px;
+    max-width: 450px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Título da seção */
+.contact-container h1 {
+    font-size: 1.8rem;
+    color: #0056b3; /* Azul forte */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Lista de contatos */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border: 1px solid #d1e7fd; /* Bordas finas */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover na lista */
+.contact-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Rótulo dos contatos */
+.contact-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Links dos contatos */
+.contact-list a {
+    font-size: 1rem;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #003d80; /* Azul mais escuro */
+    text-decoration: underline;
+}
+
+/* Efeito de foco para acessibilidade */
+.contact-list a:focus {
+    outline: 2px dashed #0056b3; /* Destaque azul */
+    outline-offset: 4px;
+}
