@@ -5,7 +5,8 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
-
+    overflow: hidden; /* Impede a rolagem */
+    height: 100vh;    /* Ocupa 100% da altura da janela */
 }
 
 h1 {
@@ -53,17 +54,14 @@ p:hover {
 /* Estilo para todos os links com a classe nav-link */
 /* Contêiner principal */
 .nav-container {
+    display: flex; /* Flexbox para organizar os itens em linha */
+    flex-direction: row; /* Itens na horizontal */
+    width: 100vw; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
     margin: 0;
     padding: 0;
-    width: 100vw; /* Ocupa toda a largura da tela */
-    height: 75vw; /* Ocupa toda a altura da tela */
     box-sizing: border-box;
     background: linear-gradient(to right, #cccccc, #666666); /* Degradê contínuo entre as boxes */
-}
-
-.no-scroll{ /* impede a rolagem de uma determidada pagina */
-    overflow: hidden;
-    height: 100vh;
 }
 
 /* Estilo dos links */
@@ -72,6 +70,7 @@ a.nav-link {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     flex: 1; /* Faz com que cada link ocupe espaço igual na largura */
+    height: 100%; /* Ocupa toda a altura do contêiner pai */
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff; /* Texto branco */
@@ -85,7 +84,7 @@ a.nav-link {
 a.nav-link:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Leve escurecimento do fundo */
     color: #fff; /* Texto branco */
-    transform: scale(1.05); /* Leve aumento para exaltar a box */
+    transform: scale(1.10); /* Leve aumento para exaltar a box */
 }
 
 /* Estilo para o link da página inicial */
@@ -125,3 +124,6 @@ a.home-link:focus {
     text-align: center; /* Centraliza o link horizontalmente */
     margin: 20px auto;
 }
+
+
+
